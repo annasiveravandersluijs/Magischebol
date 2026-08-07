@@ -120,7 +120,8 @@
 		}
 
 		function playAnimation(){
-			document.getElementById("image").src="magischebol.gif";
+		var img = document.getElementById("image");
+		img.src = "magischebol.gif?t=" + new Date().getTime();
 		}
 
 		window.onload=function(){
